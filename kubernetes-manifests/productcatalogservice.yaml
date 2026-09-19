@@ -45,7 +45,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: ghcr.io/hamza5839/microservices-demo/productcatalogservice:396df360a5a6f2eaf58e648021183c4fb377d48f
+        image: ghcr.io/hamza5839/microservices-demo/productcatalogservice:90047131356fa1d209902c36220e4bed7180a7b8
         ports:
         - containerPort: 3550
         env:

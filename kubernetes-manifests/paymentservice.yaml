@@ -45,7 +45,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: ghcr.io/hamza5839/microservices-demo/paymentservice:f1b3faa648c45b0a067da04f3676f81e139bb002
+        image: ghcr.io/hamza5839/microservices-demo/paymentservice:90047131356fa1d209902c36220e4bed7180a7b8
         ports:
         - containerPort: 50051
         env:
