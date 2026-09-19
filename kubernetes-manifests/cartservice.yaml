@@ -29,13 +29,13 @@ spec:
     spec:
       serviceAccountName: cartservice
       terminationGracePeriodSeconds: 5
+      imagePullSecrets:
+        - name: ghcr-pull
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
-        imagePullSecrets:
-        - name: ghcr-pull
       containers:
       - name: server
         securityContext:
@@ -103,13 +103,13 @@ spec:
       labels:
         app: redis-cart
     spec:
+      imagePullSecrets:
+        - name: ghcr-pull
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
-        imagePullSecrets:
-        - name: ghcr-pull
       containers:
       - name: redis
         securityContext:

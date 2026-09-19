@@ -30,13 +30,13 @@ spec:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
       serviceAccountName: frontend
+      imagePullSecrets:
+        - name: ghcr-pull
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
         runAsNonRoot: true
         runAsUser: 1000
-        imagePullSecrets:
-        - name: ghcr-pull
       containers:
         - name: server
           securityContext:

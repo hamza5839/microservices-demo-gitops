@@ -32,6 +32,8 @@ spec:
       serviceAccountName: loadgenerator
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
+      imagePullSecrets:
+        - name: ghcr-pull
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -68,8 +70,6 @@ spec:
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
-        imagePullSecrets:
-        - name: ghcr-pull
       containers:
       - name: main
         securityContext:
