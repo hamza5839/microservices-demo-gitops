@@ -45,7 +45,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: ghcr.io/hamza5839/microservices-demo/currencyservice:76a1fb2135b30a59e18cc64dd2aac3b73aeea34c
+        image: ghcr.io/hamza5839/microservices-demo/currencyservice:698f5581413aea38be1918a9a8a5d3c630431605
         ports:
         - name: grpc
           containerPort: 7000
