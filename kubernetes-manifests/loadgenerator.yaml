@@ -79,7 +79,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: ghcr.io/hamza5839/microservices-demo/loadgenerator:9f286dd6069a30852ac57fa2856c91bd765d12fe
+        image: ghcr.io/hamza5839/microservices-demo/loadgenerator:7e1101085f4c16e267a3196343f2f12fae07b8db
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
